@@ -12,7 +12,7 @@ jobs:
             - name: Execute cowsay CMD
               run: cowsay -f dragon "run for cover im a dragon" >> dragon.txt
             - name: check dragon file exists or not
-              run: gerp -i "dragon" dragon.txt
+              run: grep -i "dragon" dragon.txt
             - name: reading dragon file
               run: cat dragon.txt
             - name: list repo files
