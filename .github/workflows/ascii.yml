@@ -8,7 +8,7 @@ jobs:
             - name: git checkout
               uses: actions/checkout@v4
             - name: install cowsay
-              run: sudo apt-get install cowsay -y
+              run: sudo apt-get install cowsay -y && sudo apt-get install cowsay-off -y
             - name: Execute cowsay CMD
               run: cowsay -f lion "im king of jungal" >> lion.txt
             - name: check lion file exists or not
