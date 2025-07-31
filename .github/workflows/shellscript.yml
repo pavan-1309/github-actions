@@ -1,0 +1,15 @@
+name: shell scripting
+
+on: push
+jobs: 
+    scripting:
+        runs-on: ubuntu-latest
+        steps:
+            - name: git checkout
+              uses: actions/checkout@v4
+            - name: listing files
+              run: ls -ltra
+            - name: cd
+              run: cd github-actions
+            - name: running shell script
+              run: ./ascii.sh  
