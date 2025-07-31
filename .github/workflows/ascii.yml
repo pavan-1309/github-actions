@@ -8,9 +8,9 @@ jobs:
             - name: git checkout
               uses: actions/checkout@v4
             - name: install cowsay
-              run: sudo apt-get install cowsay -y && sudo apt-get install cowsay-off -y
+              run: sudo apt-get install cowsay -y 
             - name: Execute cowsay CMD
-              run: cowsay -f dragon "im king of jungal" >> dragon.txt
+              run: cowsay -f dragon "shaktishali dragon bayataki ra" >> dragon.txt
             - name: check dragon file exists or not
               run: grep -i "dragon" dragon.txt
             - name: reading dragon file
