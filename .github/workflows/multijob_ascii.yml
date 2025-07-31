@@ -26,9 +26,10 @@ jobs:
             uses: actions/download-artifact@v4
             with:
               name: dragon
-          
+          - name: listing files
+            run: ls 
           - name: check for dragon
-            run: grep -i "dragon" dragong.txt
+            run: grep -i "dragon" dragon.txt
     
     reading_dragon:
         needs: checking_files
