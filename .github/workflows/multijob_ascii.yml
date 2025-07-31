@@ -27,7 +27,7 @@ jobs:
             with:
               name: dragon
           - name: listing files
-            run: ls 
+            run: ls
           - name: check for dragon
             run: grep -i "dragon" dragon.txt
     
